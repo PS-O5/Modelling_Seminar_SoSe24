@@ -1,8 +1,10 @@
 # Modelling_Seminar_SoSe24
 > Topic 6: Domain Decomposition Methods under Constraints in CFD Simulations
 
-> [!NOTE]
-> A simple guide to get METIS working on your linux machine :)
+<details>
+<summary>
+  A simple guide to get METIS working on your linux machine :)
+</summary>
 
 ## Steps to install METIS:
 1. Download the metis-5.1.0.tar.gz in your local directory.
@@ -28,3 +30,4 @@ sudo make install -j $nproc
 ```
 
 Congratulations!
+</details>
