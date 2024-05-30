@@ -11,9 +11,12 @@ int main() {
     std::vector<std::vector<int>> meshToGraph = MeshToGraph_2DTri(h); 	//It takes 'h' as input
     
     std::cout << h * h << " " << ((h + 1)*(3*(h + 1) - 4) + 1) << std::endl;
-    for(auto& vecs : meshToGraph){
-	for(auto& elements : vecs){
-	    std::cout << " " << elements << " ";
+    for(int i = 0; i < meshToGraph.size(); i++){
+	for(int j = 0; j < meshToGraph[i].size(); j++){
+	    std::cout << meshToGraph[i][j];
+	    if(j < meshToGraph[i].size() - 1){
+	    std::cout << " ";
+	    }
 	}
 	std::cout << std::endl;
     }
@@ -24,9 +27,12 @@ int main() {
     }
 
     graphFile << h * h << " " << ((h + 1)*(3*(h + 1) - 4) + 1) << std::endl;
-    for(auto& vecs : meshToGraph){
-	    for(auto& elements : vecs){
-	    	graphFile << elements << " ";
+    for(int i = 0; i < meshToGraph.size(); i++){
+	    for(int j = 0; j < meshToGraph[i].size(); j++){
+		graphFile << meshToGraph[i][j];
+	    	if(j < meshToGraph[i].size() - 1){
+		    graphFile << " ";
+		}
 	    }
 	    graphFile << std::endl;
     }
