@@ -6,13 +6,32 @@
 std::vector<std::vector<int>> MeshToGraph_2DTri(int h);
 
 int main() {
-    std::vector<std::vector<int>> meshToGraph = MeshToGraph_2DTri(10); 	//It takes 'h' as input
+    
+    int h = 5;	
+    std::vector<std::vector<int>> meshToGraph = MeshToGraph_2DTri(h); 	//It takes 'h' as input
+    
+    std::cout << h * h << " " << ((h + 1)*(3*(h + 1) - 4) + 1) << std::endl;
+    for(auto& vecs : meshToGraph){
+	for(auto& elements : vecs){
+	    std::cout << " " << elements << " ";
+	}
+	std::cout << std::endl;
+    }
+
+    std::ofstream graphFile("graphToMesh.graph");
+    if(!graphFile){
+    	std::cout << "AAi Ghatli: File sapadli nahi!" << std::endl;
+    }
+
+    graphFile << h * h << " " << ((h + 1)*(3*(h + 1) - 4) + 1) << std::endl;
     for(auto& vecs : meshToGraph){
 	    for(auto& elements : vecs){
-	    	std::cout << " " << elements << " ";
+	    	graphFile << elements << " ";
 	    }
-	    std::cout << std::endl;
+	    graphFile << std::endl;
     }
+    graphFile.close();
+    std::cout << "graphToMesh.graph has been generated." << std::endl;
     return 0;
 }
 
