@@ -1,0 +1,2 @@
+## 2d_sqvtk_to_graph.cpp
+This is a hard coded example of conversion of the square.vtk mesh file into a data structure that stores a graph file. It follows the standard defined on the page number 9 of METIS manual. However, this isn't the most effective or optimised way of doing things but should serve as building blocks for understanding the conversion. Other optimised file types are to be explore.
