@@ -10,5 +10,5 @@ b = Origin of Y <br>
 c = Max X <br>
 d = Max Y <br>
 h = Number of divisions (Refining) <br>
-**ONLY WORKS FOR SQUARE DOMAIN IN FIRST QUADRANT**
+<strong>ONLY WORKS FOR SQUARE DOMAIN IN FIRST QUADRANT</strong>
 <br>
