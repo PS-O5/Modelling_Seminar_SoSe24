@@ -10,4 +10,4 @@ b = Origin of Y <br>
 c = Max X <br>
 d = Max Y <br>
 h = Number of divisions (Refining) <br>
-__ONLY WORKS FOR SQUARE DOMAIN IN FIRST QUADRANT__ <br>
+**ONLY WORKS FOR SQUARE DOMAIN IN FIRST QUADRANT**. <br>
