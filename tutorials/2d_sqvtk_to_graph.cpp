@@ -2,6 +2,9 @@
 #include <vector>
 #include <fstream>
 #include <cmath>
+//#include "readMetis.h"
+
+
 
 std::vector<std::vector<int>> MeshToGraph_2DTri(int h);
 
@@ -10,7 +13,7 @@ int main() {
     int h = 5;	
     std::vector<std::vector<int>> meshToGraph = MeshToGraph_2DTri(h); 	//It takes 'h' as input
     
-    std::cout << h * h << " " << ((h + 1)*(3*(h + 1) - 4) + 1) << std::endl;
+    std::cout << std::pow((h+1),2) << " " << ((h + 1)*(3*(h + 1) - 4) + 1) << std::endl;
     for(int i = 0; i < meshToGraph.size(); i++){
 	for(int j = 0; j < meshToGraph[i].size(); j++){
 	    std::cout << meshToGraph[i][j];
@@ -26,7 +29,7 @@ int main() {
     	std::cout << "AAi Ghatli: File sapadli nahi!" << std::endl;
     }
 
-    graphFile << h * h << " " << ((h + 1)*(3*(h + 1) - 4) + 1) << std::endl;
+    graphFile << std::pow((h+1),2) << " " << ((h + 1)*(3*(h + 1) - 4) + 1) << std::endl;
     for(int i = 0; i < meshToGraph.size(); i++){
 	    for(int j = 0; j < meshToGraph[i].size(); j++){
 		graphFile << meshToGraph[i][j];
