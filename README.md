@@ -15,7 +15,7 @@ tar -xvzf metis-5.1.0.tar.gz
 ```
 4. We have to edit the file 'include/metis.h' and specify the width (64 bits) of the elementary data type used in METIS. This is controled by the IDXTYPEWIDTH constant.
 ```
-vim metis-5.1.0/include/metis.h'
+vim metis-5.1.0/include/metis.h
 ```
 5. This will open the header file in terminal. Edit the value infront *#define IDXTYPEWIDTH* to 64 (Line number 33).
 6. Now you'll have to save the file and close the vim by pressing 'Esc' then type ':wq' and then press 'Enter'. Then execute next commands:
