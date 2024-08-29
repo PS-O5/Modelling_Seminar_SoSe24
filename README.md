@@ -29,5 +29,11 @@ sudo make -j $nproc
 sudo make install -j $nproc
 ```
 
+or the NOOB's way
+```
+sudo apt-get install libmetis5 libmetis-dev metis
+```
+
 Congratulations!
 </details>
+
