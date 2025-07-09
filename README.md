@@ -5,7 +5,7 @@
 
 
 
-~PART OF OLD README~
+~PART OF OLD README
 <details>
 <summary>
   A simple guide to get METIS working on your linux machine :)
@@ -37,7 +37,7 @@ sudo make install -j $nproc
 or the NOOB's way
 ```
 sudo apt-get install libmetis5 libmetis-dev metis
-```
+```~
 
 Congratulations!
 </details>
