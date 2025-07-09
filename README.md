@@ -1,7 +1,7 @@
 # Modelling_Seminar_SoSe24
 > Topic 6: Domain Decomposition Methods under Constraints in CFD Simulations
 
-##This was a dump location for our Modelling Seminar 2025. The working stuff is in BACKUP, just download the latest one and if there are problems use the metis version provided.
+## This was a dump location for our Modelling Seminar 2025. The working stuff is in BACKUP, just download the latest one and if there are problems use the metis version provided.
 
 <details>
 <summary>
