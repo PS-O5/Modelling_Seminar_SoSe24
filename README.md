@@ -5,7 +5,7 @@
 
 
 
-~PART OF OLD README
+<PART OF OLD README>
 <details>
 <summary>
   A simple guide to get METIS working on your linux machine :)
